@@ -9,7 +9,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
-    """Serializer for the user object."""
+    """Serializer for the user object in user-service."""
 
     class Meta:
         model = get_user_model()

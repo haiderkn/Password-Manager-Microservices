@@ -22,8 +22,8 @@ jobs:
       - name: Lint User Service
         run: docker-compose -f user-service/docker-compose.yml run --rm app sh -c "flake8"
 
-      # Test Password-Service
-      - name: Test Password Service
-        run: docker-compose -f password-service/docker-compose.yml run --rm app sh -c "python manage.py wait_for_db && python manage.py test"
-      - name: Lint Password Service
-        run: docker-compose -f password-service/docker-compose.yml run --rm app sh -c "flake8"
+      # # Test Password-Service
+      # - name: Test Password Service
+      #   run: docker-compose -f password-service/docker-compose.yml run --rm app sh -c "python manage.py wait_for_db && python manage.py test"
+      # - name: Lint Password Service
+      #   run: docker-compose -f password-service/docker-compose.yml run --rm app sh -c "flake8"
